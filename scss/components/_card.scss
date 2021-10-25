@@ -1,0 +1,84 @@
+@use "../abstracts" as *;
+$gap-card-figure: rem(16);
+
+.card {
+  border-radius: 0.8em;
+  box-shadow: 0 rem(15) rem(30) rgba($card-box-shadow-color, 0.4);
+  background-color: $card-background-color;
+  max-width: rem(400);
+  overflow: hidden;
+}
+
+.card__article {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.card__content {
+  padding: rem(40) rem(32) rem(16);
+}
+
+.card__link {
+  text-decoration: none;
+  color: $card-title-color;
+  font-size: rem(16);@include focus-visible;@include on-event {
+    text-decoration: underline;
+  }
+}
+
+.card__description {
+  margin: 1.25em 0;
+}
+
+.card__container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card__figure {
+  display: flex;
+  align-items: center;
+
+  @supports (gap: $gap-card-figure) {
+    gap: $gap-card-figure;
+  }
+}
+
+.card__author {
+  color: $card-author-color;
+  font-weight: 700;
+}
+
+.card__published-date {
+  color: $card-published-date-color;
+}
+
+.card__photo {
+  margin-right: $gap-card-figure;
+  border-radius: 50%;
+  width: rem(40);
+  height: rem(40);
+
+  @supports (gap: $gap-card-figure) {
+    margin-right: 0;
+  }
+}
+
+.card__button {
+  border: none;
+  border-radius: 50%;
+  background-color: $card-share-button-background-color;
+  cursor: pointer;
+  padding: 0.7em;@include focus-visible;@include on-event {
+    background-color: $card-share-button-hover-background-color;
+    color: $card-share-button-hover-color;
+  }
+}
+
+.card__image {
+  object-fit: cover;
+  object-position: top;
+  height: rem(220);
+}

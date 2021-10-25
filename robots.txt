@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://articlepreviewcomponentvanza.netlify.app/sitemap.xml

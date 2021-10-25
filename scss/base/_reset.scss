@@ -1,0 +1,162 @@
+@use "../abstracts" as *;
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    background-attachment: initial !important;
+    transition-delay: 0s !important;
+    transition-duration: 0s !important;
+    animation-duration: 1ms !important;
+    animation-delay: -1ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/** 
+ * Making sure it inherits 100% of the 
+ * user font size settings 
+ */
+html {
+  font-size: 100%;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background-color: $selection-bg;
+  color: $selection-color;
+}
+
+::-moz-selection {
+  background-color: $selection-bg;
+  color: $selection-color;
+}
+
+/**
+ * Screen Reader Class
+ * 
+ * To hide content visually.
+ *
+ * Source: https://gist.github.com/ffoodd/000b59f431e3e64e4ce1a24d5bb36034
+ */
+.sr-only {
+  position: absolute !important;
+  margin: -1px !important;
+  -webkit-clip-path: inset(50%) !important;
+          clip-path: inset(50%) !important;
+  border: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $body-background-color;
+  padding: rem(72) rem(20);
+  min-height: 100vh;
+  color: $body-font-color;
+  font: #{rem(13)}/ 1.6 "Manrope", sans-serif;
+}
+
+p {
+  font-size: 1em;
+}
+
+h2 {
+  line-height: 1.2;
+}
+
+noscript {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 99;
+  border-radius: 1em;
+  background-color: $white;
+  padding: rem(20);
+  width: rem(280);
+  font-size: rem(16);
+  transform: translate(-50%, -50%);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+  line-height: 1.6;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+/** 
+ * Avoid overloading a user with sound from a video that 
+ * autoplays when the page is loaded.
+ *
+ * Source: https://github.com/AllThingsSmitty/css-protips#hide-autoplay-videos-that-arent-muted
+ */
+video[autoplay]:not([muted]) {
+  display: none;
+}
+
+/**
+ * Sighted keyboard users rely on focus 
+ * to determine where keyboard events go
+ * in the page. Make focus for form 
+ * elements stand out and consistent 
+ * then a browser's default 
+ * implementation.
+ *
+ * Source: https://github.com/AllThingsSmitty/css-protips#set-focus-for-form-elements
+ */
+a:focus, button:focus, input:focus, select:focus, textarea:focus {
+  outline: rgb(17, 17, 17) dotted 0.125em;
+  outline-offset: 0.05em;
+  box-shadow: none;
+}
+
+/**
+ * Set font-size on Form Elements for a 
+ * Better Mobile Experience
+ *
+ * To avoid mobile browsers (iOS Safari,
+ * et al.) from zooming in on HTML form 
+ * elements when a <select> drop-down is
+ * tapped, add font-size to the selector
+ * rule.
+ *
+ * Source: https://github.com/AllThingsSmitty/css-protips#set-font-size-on-form-elements-for-a-better-mobile-experience
+ */
+input[type="text"], input[type="number"], select, textarea {
+  font-size: 1rem;
+}
+
+/** 
+ * Using currentColor to inherit the 
+ * color value 
+ */
+svg path {
+  fill: currentColor;
+}
+
+/** 
+ * Set "display: none" on Line Breaks 
+ * Used as Spacing 
+ */
+br + br {
+  display: none;
+}
