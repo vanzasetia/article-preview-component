@@ -1,7 +1,9 @@
 @use "../abstracts" as *;
 
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
+  *,
+  *::before,
+  *::after {
     background-attachment: initial !important;
     transition-delay: 0s !important;
     transition-duration: 0s !important;
@@ -20,7 +22,9 @@ html {
   font-size: 100%;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -47,7 +51,7 @@ html {
   position: absolute !important;
   margin: -1px !important;
   -webkit-clip-path: inset(50%) !important;
-          clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
   border: 0 !important;
   padding: 0 !important;
   width: 1px !important;
@@ -123,7 +127,11 @@ video[autoplay]:not([muted]) {
  *
  * Source: https://github.com/AllThingsSmitty/css-protips#set-focus-for-form-elements
  */
-a:focus, button:focus, input:focus, select:focus, textarea:focus {
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
   outline: rgb(17, 17, 17) dotted 0.125em;
   outline-offset: 0.05em;
   box-shadow: none;
@@ -141,7 +149,10 @@ a:focus, button:focus, input:focus, select:focus, textarea:focus {
  *
  * Source: https://github.com/AllThingsSmitty/css-protips#set-font-size-on-form-elements-for-a-better-mobile-experience
  */
-input[type="text"], input[type="number"], select, textarea {
+input[type="text"],
+input[type="number"],
+select,
+textarea {
   font-size: 1rem;
 }
 

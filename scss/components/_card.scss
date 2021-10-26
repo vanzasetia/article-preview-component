@@ -11,6 +11,7 @@ $gap-card-figure: rem(16);
 
 .card__article {
   display: flex;
+  position: relative;
   flex-direction: column-reverse;
 }
 
@@ -21,18 +22,21 @@ $gap-card-figure: rem(16);
 .card__link {
   text-decoration: none;
   color: $card-title-color;
-  font-size: rem(16);@include focus-visible;@include on-event {
+  font-size: rem(16);
+
+  @include focus-visible;
+
+  @include on-event {
     text-decoration: underline;
   }
 }
 
 .card__description {
-  margin: 1.25em 0;
+  margin: 2em 0;
 }
 
 .card__container {
   display: flex;
-  position: relative;
   align-items: center;
   justify-content: space-between;
 }
@@ -67,13 +71,35 @@ $gap-card-figure: rem(16);
 }
 
 .card__button {
+  position: relative;
+  z-index: 2;
   border: none;
   border-radius: 50%;
   background-color: $card-share-button-background-color;
+  color: $very-dark-grayish-blue;
   cursor: pointer;
-  padding: 0.7em;@include focus-visible;@include on-event {
+  padding: 0.7em;
+
+  @include focus-visible;
+
+  @include on-event {
     background-color: $card-share-button-hover-background-color;
     color: $card-share-button-hover-color;
+  }
+}
+
+.card__button--active {
+  background-color: $card-share-button-hover-background-color;
+  color: $card-share-button-hover-color;
+
+  &:focus-visible {
+    outline: rem(3) dotted $pure-white;
+    outline-offset: rem(5);
+  }
+
+  @include on-event {
+    background-color: $card-share-button-background-color;
+    color: $very-dark-grayish-blue;
   }
 }
 

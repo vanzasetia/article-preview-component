@@ -1,3 +1,45 @@
+@use "../abstracts" as *;
+
+$gap-share-list: rem(16);
+
 .share {
-  display: none;
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  align-items: center;
+  width: 100%;
+  height: rem(68);
+  padding: rem(16) rem(32);
+  background-color: $very-dark-grayish-blue;
+}
+
+.share__text {
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  color: $share-text-color;
+  margin-right: rem(16);
+}
+
+.share__list {
+  display: flex;
+  align-items: center;
+
+  @supports (gap: $gap-share-list) {
+    gap: $gap-share-list;
+  }
+}
+
+.share__link {
+  display: inline-block;
+
+  &:focus-visible {
+    outline: rem(3) dotted $pure-white;
+    outline-offset: rem(5);
+  }
+}
+
+.share__icon {
+  width: rem(20);
+  height: rem(20);
 }

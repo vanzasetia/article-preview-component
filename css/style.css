@@ -6,8 +6,8 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  line-height: 1.15;/* 1 */
-
+  line-height: 1.15;
+  /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
 }
@@ -33,8 +33,8 @@ main {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 h1 {
-  margin: 0.67em 0;
   font-size: 2em;
+  margin: 0.67em 0;
 }
 
 /* Grouping content
@@ -44,8 +44,10 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;/* 1 */
-  height: 0;/* 1 */
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
   overflow: visible;
   /* 2 */
 }
@@ -55,7 +57,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;/* 1 */
+  font-family: monospace, monospace;
+  /* 1 */
   font-size: 1em;
   /* 2 */
 }
@@ -74,8 +77,10 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;/* 1 */
-  text-decoration: underline;/* 2 */
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
   text-decoration: underline dotted;
   /* 2 */
 }
@@ -83,7 +88,8 @@ abbr[title] {
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
-b, strong {
+b,
+strong {
   font-weight: bolder;
 }
 
@@ -91,8 +97,11 @@ b, strong {
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
-code, kbd, samp {
-  font-family: monospace, monospace;/* 1 */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
   font-size: 1em;
   /* 2 */
 }
@@ -108,11 +117,12 @@ small {
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
  */
-sub, sup {
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
   position: relative;
   vertical-align: baseline;
-  line-height: 0;
-  font-size: 75%;
 }
 
 sub {
@@ -138,11 +148,18 @@ img {
  * 1. Change the font styles in all browsers.
  * 2. Remove the margin in Firefox and Safari.
  */
-button, input, optgroup, select, textarea {/* 1 */
-  margin: 0;/* 1 */
-  line-height: 1.15;
-  font-family: inherit;/* 1 */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
   font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
   /* 2 */
 }
 
@@ -150,7 +167,8 @@ button, input, optgroup, select, textarea {/* 1 */
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
  */
-button, input {
+button,
+input {
   /* 1 */
   overflow: visible;
 }
@@ -159,7 +177,8 @@ button, input {
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
  */
-button, select {
+button,
+select {
   /* 1 */
   text-transform: none;
 }
@@ -167,14 +186,20 @@ button, select {
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
-button, [type="button"], [type="reset"], [type="submit"] {
+button,
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
 /**
  * Remove the inner border and padding in Firefox.
  */
-button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -182,7 +207,10 @@ button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-mo
 /**
  * Restore the focus styles unset by the previous rule.
  */
-button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted currentColor;
 }
 
@@ -200,12 +228,17 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;/* 2 */
-  display: table;/* 1 */
-  padding: 0;/* 1 */
-  max-width: 100%;/* 3 */
-  white-space: normal;/* 1 */
+  box-sizing: border-box;
+  /* 1 */
   color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
   /* 1 */
 }
 
@@ -227,8 +260,10 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type="checkbox"], [type="radio"] {
-  box-sizing: border-box;/* 1 */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
   padding: 0;
   /* 2 */
 }
@@ -236,7 +271,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -244,17 +280,17 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {/* 1 */
-  outline-offset: -2px;
-
+[type=search] {
   -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
   /* 2 */
 }
 
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -262,10 +298,10 @@ textarea {
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
-::-webkit-file-upload-button {/* 1 */
-  font: inherit;
-
+::-webkit-file-upload-button {
   -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
   /* 2 */
 }
 
@@ -298,7 +334,7 @@ template {
  * Add the correct display in IE 10.
  */
 [hidden] {
-  display: none;
+  display: none !important;
 }
 
 /*------------------------------------*\
@@ -337,11 +373,11 @@ template {
  */
 hr {
   display: block;
-  margin: 1em 0;
-  border: 0;
-  border-top: 0.0625rem solid #ccc;
-  padding: 0;
   height: 0.0625rem;
+  border: 0;
+  border-top: 0.0625rem solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 /*
@@ -349,7 +385,12 @@ hr {
  * images, videos and the bottom of their containers:
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
-audio, canvas, iframe, img, svg, video {
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
   vertical-align: middle;
 }
 
@@ -357,8 +398,8 @@ audio, canvas, iframe, img, svg, video {
  * Remove default fieldset styles.
  */
 fieldset {
-  margin: 0;
   border: 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -370,7 +411,9 @@ textarea {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
+  *,
+*::before,
+*::after {
     background-attachment: initial !important;
     transition-delay: 0s !important;
     transition-duration: 0s !important;
@@ -388,7 +431,9 @@ html {
   font-size: 100%;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -415,7 +460,7 @@ html {
   position: absolute !important;
   margin: -1px !important;
   -webkit-clip-path: inset(50%) !important;
-          clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
   border: 0 !important;
   padding: 0 !important;
   width: 1px !important;
@@ -491,8 +536,12 @@ video[autoplay]:not([muted]) {
  *
  * Source: https://github.com/AllThingsSmitty/css-protips#set-focus-for-form-elements
  */
-a:focus, button:focus, input:focus, select:focus, textarea:focus {
-  outline: #111 dotted 0.125em;
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: #111111 dotted 0.125em;
   outline-offset: 0.05em;
   box-shadow: none;
 }
@@ -509,7 +558,10 @@ a:focus, button:focus, input:focus, select:focus, textarea:focus {
  *
  * Source: https://github.com/AllThingsSmitty/css-protips#set-font-size-on-form-elements-for-a-better-mobile-experience
  */
-input[type="text"], input[type="number"], select, textarea {
+input[type=text],
+input[type=number],
+select,
+textarea {
   font-size: 1rem;
 }
 
@@ -539,6 +591,7 @@ br + br {
 
 .card__article {
   display: flex;
+  position: relative;
   flex-direction: column-reverse;
 }
 
@@ -560,12 +613,11 @@ br + br {
 }
 
 .card__description {
-  margin: 1.25em 0;
+  margin: 2em 0;
 }
 
 .card__container {
   display: flex;
-  position: relative;
   align-items: center;
   justify-content: space-between;
 }
@@ -602,9 +654,12 @@ br + br {
 }
 
 .card__button {
+  position: relative;
+  z-index: 2;
   border: none;
   border-radius: 50%;
   background-color: #ecf2f8;
+  color: #48556a;
   cursor: pointer;
   padding: 0.7em;
 }
@@ -617,6 +672,19 @@ br + br {
   color: white;
 }
 
+.card__button--active {
+  background-color: #6d7f97;
+  color: white;
+}
+.card__button--active:focus-visible {
+  outline: 0.1875rem dotted white;
+  outline-offset: 0.3125rem;
+}
+.card__button--active:hover, .card__button--active:active {
+  background-color: #ecf2f8;
+  color: #48556a;
+}
+
 .card__image {
   object-fit: cover;
   object-position: top;
@@ -624,5 +692,43 @@ br + br {
 }
 
 .share {
-  display: none;
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  align-items: center;
+  width: 100%;
+  height: 4.25rem;
+  padding: 1rem 2rem;
+  background-color: #48556a;
+}
+
+.share__text {
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  color: #9eafc2;
+  margin-right: 1rem;
+}
+
+.share__list {
+  display: flex;
+  align-items: center;
+}
+@supports (gap: 1rem) {
+  .share__list {
+    gap: 1rem;
+  }
+}
+
+.share__link {
+  display: inline-block;
+}
+.share__link:focus-visible {
+  outline: 0.1875rem dotted white;
+  outline-offset: 0.3125rem;
+}
+
+.share__icon {
+  width: 1.25rem;
+  height: 1.25rem;
 }
