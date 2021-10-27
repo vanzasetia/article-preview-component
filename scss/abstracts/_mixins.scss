@@ -2,7 +2,8 @@
 @use "functions" as *;
 
 @mixin focus-visible($color) {
-  &:focus-visible {
+  &:focus-visible,
+  &:focus {
     outline: rem(3) dotted $color;
     outline-offset: rem(5);
   }
@@ -13,15 +14,9 @@
   color: set-color($color);
 }
 
-@mixin on-event($focus: false) {
-  @if $focus {
-    &:hover, &:active, &:focus {
-      @content;
-    }
-  } @else {
-    &:hover, &:active {
-      @content;
-    }
+@mixin on-event() {
+  &:hover, &:active {
+    @content;
   }
 }
 
