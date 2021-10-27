@@ -2,6 +2,15 @@
 
 $gap-share-list: rem(16);
 
+/**
+ * 1. Height 68px is based on try and error,
+ *    meaning after open the dev tool and try
+ *    to find the correct height until the 
+ *    social media icons align horizontally
+ *    with the share button.
+ * 2. The padding numbers are coming from the
+ *    .card__content padding.
+ */
 .share {
   display: flex;
   position: absolute;
@@ -9,8 +18,8 @@ $gap-share-list: rem(16);
   bottom: 0;
   align-items: center;
   width: 100%;
-  height: rem(68);
-  padding: rem(16) rem(32);
+  height: rem(68); /* 1 */
+  padding: rem(16) rem(32); /* 2 */
   background-color: $very-dark-grayish-blue;
 }
 
@@ -34,9 +43,4 @@ $gap-share-list: rem(16);
   display: inline-block;
 
   @include focus-visible($pure-white);
-}
-
-.share__icon {
-  width: rem(20);
-  height: rem(20);
 }
