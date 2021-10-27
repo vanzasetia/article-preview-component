@@ -3,8 +3,8 @@ $gap-card-figure: rem(16);
 
 .card {
   border-radius: 0.8em;
-  box-shadow: 0 rem(15) rem(30) rgba($card-box-shadow-color, 0.4);
-  background-color: $card-background-color;
+  box-shadow: 0 rem(15) rem(30) rgba($grayish-blue, 0.4);
+  background-color: $pure-white;
   max-width: rem(400);
   overflow: hidden;
 }
@@ -21,10 +21,10 @@ $gap-card-figure: rem(16);
 
 .card__link {
   text-decoration: none;
-  color: $card-title-color;
+  color: $very-dark-grayish-blue;
   font-size: rem(16);
 
-  @include focus-visible;
+  @include focus-visible($very-dark-blue);
 
   @include on-event {
     text-decoration: underline;
@@ -51,12 +51,12 @@ $gap-card-figure: rem(16);
 }
 
 .card__author {
-  color: $card-author-color;
+  color: $very-dark-grayish-blue;
   font-weight: 700;
 }
 
 .card__published-date {
-  color: $card-published-date-color;
+  color: $grayish-blue;
 }
 
 .card__photo {
@@ -75,30 +75,26 @@ $gap-card-figure: rem(16);
   z-index: 2;
   border: none;
   border-radius: 50%;
-  background-color: $card-share-button-background-color;
+  background-color: $light-grayish-blue;
   color: $very-dark-grayish-blue;
   cursor: pointer;
   padding: 0.7em;
 
-  @include focus-visible;
+  @include focus-visible($very-dark-blue);
 
   @include on-event {
-    background-color: $card-share-button-hover-background-color;
-    color: $card-share-button-hover-color;
+    background-color: $desaturated-dark-blue;
+    color: $pure-white;
   }
 }
 
 .card__button--active {
-  background-color: $card-share-button-hover-background-color;
-  color: $card-share-button-hover-color;
+  background-color: $desaturated-dark-blue;
+  color: $pure-white;
 
-  &:focus-visible {
-    outline: rem(3) dotted $pure-white;
-    outline-offset: rem(5);
-  }
-
+  @include focus-visible($pure-white);
   @include on-event {
-    background-color: $card-share-button-background-color;
+    background-color: $light-grayish-blue;
     color: $very-dark-grayish-blue;
   }
 }

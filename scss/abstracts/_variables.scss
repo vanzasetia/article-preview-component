@@ -1,30 +1,14 @@
-// Default style that I currently use on this project
-$default-html-font-size: 100% !default;
+// Default colors that I currently use on this project
 $black: rgb(17, 17, 17) !default;
 $white: rgb(242, 242, 242) !default;
-$selection-bg: rgb(23, 27, 33) !default;
-$selection-color: $white !default;
-$focus-visible-color: rgb(24, 28, 35) !default;
 
 // Colors
+$very-dark-blue: rgb(24, 28, 35);
 $very-dark-grayish-blue: rgb(72, 85, 106);
 $desaturated-dark-blue: rgb(109, 127, 151);
 $grayish-blue: rgb(158, 175, 194);
 $light-grayish-blue: rgb(236, 242, 248);
 $pure-white: rgb(255, 255, 255);
-
-// Usage
-$body-background-color: $light-grayish-blue;
-$body-font-color: $desaturated-dark-blue;
-$card-background-color: $pure-white;
-$card-box-shadow-color: $grayish-blue;
-$card-title-color: $very-dark-grayish-blue;
-$card-author-color: $card-title-color;
-$card-published-date-color: $grayish-blue;
-$card-share-button-background-color: $light-grayish-blue;
-$card-share-button-hover-background-color: $desaturated-dark-blue;
-$card-share-button-hover-color: $pure-white;
-$share-text-color: $grayish-blue;
 
 // Breakpoints
 // Note: If you user font-size setting is 16px, then this 'em' is equal to this in 'px'

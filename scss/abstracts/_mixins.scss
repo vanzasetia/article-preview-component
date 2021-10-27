@@ -1,9 +1,9 @@
 @use "variables" as *;
 @use "functions" as *;
 
-@mixin focus-visible() {
+@mixin focus-visible($color) {
   &:focus-visible {
-    outline: rem(3) dotted $focus-visible-color;
+    outline: rem(3) dotted $color;
     outline-offset: rem(5);
   }
 }

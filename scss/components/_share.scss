@@ -17,7 +17,7 @@ $gap-share-list: rem(16);
 .share__text {
   text-transform: uppercase;
   letter-spacing: 0.4em;
-  color: $share-text-color;
+  color: $grayish-blue;
   margin-right: rem(16);
 }
 
@@ -33,10 +33,7 @@ $gap-share-list: rem(16);
 .share__link {
   display: inline-block;
 
-  &:focus-visible {
-    outline: rem(3) dotted $pure-white;
-    outline-offset: rem(5);
-  }
+  @include focus-visible($pure-white);
 }
 
 .share__icon {

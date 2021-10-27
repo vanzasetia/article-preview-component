@@ -31,13 +31,13 @@ html {
 }
 
 ::selection {
-  background-color: $selection-bg;
-  color: $selection-color;
+  background-color: rgb(23, 27, 33);
+  color: rgb(242, 242, 242);
 }
 
 ::-moz-selection {
-  background-color: $selection-bg;
-  color: $selection-color;
+  background-color: rgb(23, 27, 33);
+  color: rgb(242, 242, 242);
 }
 
 /**
@@ -64,10 +64,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $body-background-color;
+  background-color: $light-grayish-blue;
   padding: rem(72) rem(20);
   min-height: 100vh;
-  color: $body-font-color;
+  color: $desaturated-dark-blue;
   font: #{rem(13)}/ 1.6 "Manrope", sans-serif;
 }
 
