@@ -118,26 +118,6 @@ video[autoplay]:not([muted]) {
 }
 
 /**
- * Sighted keyboard users rely on focus 
- * to determine where keyboard events go
- * in the page. Make focus for form 
- * elements stand out and consistent 
- * then a browser's default 
- * implementation.
- *
- * Source: https://github.com/AllThingsSmitty/css-protips#set-focus-for-form-elements
- */
-a:focus,
-button:focus,
-input:focus,
-select:focus,
-textarea:focus {
-  outline: rgb(17, 17, 17) dotted 0.125em;
-  outline-offset: 0.05em;
-  box-shadow: none;
-}
-
-/**
  * Set font-size on Form Elements for a 
  * Better Mobile Experience
  *
