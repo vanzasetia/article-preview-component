@@ -652,15 +652,15 @@ br + br {
   color: white;
 }
 
-.card__button--active {
+.card__button.is-active {
   background-color: #6d7f97;
   color: white;
 }
-.card__button--active:focus-visible, .card__button--active:focus {
+.card__button.is-active:focus-visible, .card__button.is-active:focus {
   outline: 0.1875rem dotted white;
   outline-offset: 0.3125rem;
 }
-.card__button--active:hover, .card__button--active:active {
+.card__button.is-active:hover, .card__button.is-active:active {
   background-color: #ecf2f8;
   color: #48556a;
 }

@@ -88,7 +88,7 @@ $gap-card-figure: rem(16);
   }
 }
 
-.card__button--active {
+.card__button.is-active {
   background-color: $desaturated-dark-blue;
   color: $pure-white;
 
