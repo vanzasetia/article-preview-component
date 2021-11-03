@@ -711,8 +711,12 @@ br + br {
   }
 }
 
+/**
+ * 1. To make the :focus-visible style appear.
+ */
 .share__link {
   display: inline-block;
+  /* 1 */
 }
 .share__link:focus-visible, .share__link:focus {
   outline: 0.1875rem dotted white;

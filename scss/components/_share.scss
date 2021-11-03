@@ -39,8 +39,11 @@ $gap-share-list: rem(16);
   }
 }
 
+/**
+ * 1. To make the :focus-visible style appear.
+ */
 .share__link {
-  display: inline-block;
+  display: inline-block; /* 1 */
 
   @include focus-visible($pure-white);
 }
