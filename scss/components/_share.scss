@@ -21,6 +21,28 @@ $gap-share-list: rem(16);
   height: rem(68); /* 1 */
   padding: rem(16) rem(32); /* 2 */
   background-color: $very-dark-grayish-blue;
+
+  @include breakpoint-up("tiny") {
+    width: auto;
+    height: auto;
+    bottom: rem(110);
+    right: -#{rem(85)};
+    border-radius: 0.7em;
+    padding: rem(16) rem(40);
+
+    &::after {
+      $share-border: rem(14);
+      content: "";
+      position: absolute;
+      bottom: -#{rem(14)};
+      right: rem(120);
+      height: 0;
+      width: 0;
+      border-left: $share-border solid transparent;
+      border-right: $share-border solid transparent;
+      border-top: $share-border solid $very-dark-grayish-blue;
+    }
+  }
 }
 
 .share__text {

@@ -1,22 +1,36 @@
 @use "../abstracts" as *;
 $gap-card-figure: rem(16);
+$card-border-radius: 0.8em;
 
 .card {
-  border-radius: 0.8em;
+  border-radius: $card-border-radius;
   box-shadow: 0 rem(15) rem(30) rgba($grayish-blue, 0.4);
   background-color: $pure-white;
   max-width: rem(400);
   overflow: hidden;
+
+  @include breakpoint-up("tiny") {
+    max-width: rem(700);
+    overflow: visible;
+  }
 }
 
 .card__article {
   display: flex;
   position: relative;
   flex-direction: column-reverse;
+
+  @include breakpoint-up("tiny") {
+    flex-direction: row-reverse;
+  }
 }
 
 .card__content {
   padding: rem(40) rem(32) rem(16);
+
+  @include breakpoint-up("tiny") {
+    padding: rem(40) rem(32);
+  }
 }
 
 .card__link {
@@ -28,6 +42,10 @@ $gap-card-figure: rem(16);
 
   @include on-event {
     text-decoration: underline;
+  }
+
+  @include breakpoint-up("tiny") {
+    font-size: rem(20);
   }
 }
 
@@ -76,12 +94,11 @@ $gap-card-figure: rem(16);
   border: none;
   border-radius: 50%;
   background-color: $light-grayish-blue;
-  color: $very-dark-grayish-blue;
+  color: $desaturated-dark-blue;
   cursor: pointer;
   padding: 0.7em;
 
   @include focus-visible($very-dark-blue);
-
   @include on-event {
     background-color: $desaturated-dark-blue;
     color: $pure-white;
@@ -95,7 +112,18 @@ $gap-card-figure: rem(16);
   @include focus-visible($pure-white);
   @include on-event {
     background-color: $light-grayish-blue;
-    color: $very-dark-grayish-blue;
+    color: $desaturated-dark-blue;
+  }
+
+  @include breakpoint-up("tiny") {
+    background-color: $desaturated-dark-blue;
+    color: $pure-white;
+
+    @include focus-visible($very-dark-blue);
+    @include on-event {
+      background-color: $desaturated-dark-blue;
+      color: $pure-white;
+    }
   }
 }
 
@@ -103,4 +131,11 @@ $gap-card-figure: rem(16);
   object-fit: cover;
   object-position: top;
   height: rem(220);
+
+  @include breakpoint-up("tiny") {
+    height: auto;
+    width: rem(280);
+    border-top-left-radius: $card-border-radius;
+    border-bottom-left-radius: $card-border-radius;
+  }
 }
