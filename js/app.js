@@ -3,18 +3,25 @@
   const cardShareToggleButton = document.querySelector(
     ".js-cardShareToggleButton"
   );
+  const shareOptionsElement = document.querySelector(
+    ".js-shareOptionsElement"
+  );
+
+  const openShareOptionsElement = () => {
+    shareOptionsElement.removeAttribute("hidden");
+    cardShareToggleButton.classList.add("is-active");
+  };
+
+  const closeShareOptionsElement = () => {
+    shareOptionsElement.setAttribute("hidden", "");
+    cardShareToggleButton.classList.remove("is-active");
+  };
 
   const toggleShareOptionsElement = () => {
-    const shareOptionsElement = document.querySelector(
-      ".js-shareOptionsElement"
-    );
-
     if (shareOptionsElement.hasAttribute("hidden")) {
-      shareOptionsElement.removeAttribute("hidden");
-      cardShareToggleButton.classList.add("is-active");
+      openShareOptionsElement();
     } else {
-      shareOptionsElement.setAttribute("hidden", "");
-      cardShareToggleButton.classList.remove("is-active");
+      closeShareOptionsElement();
     }
   };
 
