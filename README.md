@@ -41,8 +41,6 @@
   - [Screenshots](#screenshots)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
@@ -72,7 +70,6 @@ The users should be able to:
 ### Links
 - [🌐 Live Review](https://articlepreviewcomponentvanza.netlify.app/)
 - [👨‍🏫 Frontend Mentor Solution Page]()
-- [📖 My Walkthrough]()
 
 ### Screenshots
 
@@ -96,11 +93,6 @@ Mobile
 - CSS Flexbox
 - Mobile-first workflow
 - [Normalize.css](https://necolas.github.io/normalize.css/)
-
-### What I Learned
-
-### Useful Resources
-
 <!-- ENDOF My Process -->
 
 <!-- Author -->

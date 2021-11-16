@@ -10,7 +10,6 @@
 - [References](#references)
   - [Guidelines](#guidelines)
   - [Web doc](#web-doc)
-  - [Articles](#articles)
   - [Tools](#tools)
 
 ## Overview
@@ -35,15 +34,12 @@ These are the guidelines that I follow when I write the code.
 - [Sass Guidelines](https://sass-guidelin.es/)
 - [JavaScript Best Practices](https://www.w3.org/wiki/JavaScript_best_practices)
 
+> Keep in mind that I don't follow 100% of the guidelines.
+
 ### Web Doc
 - [Element.setAttribute() - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute)
 - [Element.hasAttribute() - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Element/hasAttribute)
 - [Element.removeAttribute() - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Element/removeAttribute)
-
-
-### Articles
-
-Give me explanation
 
 ### Tools
 - [font-face generator](https://everythingfonts.com/font-face) - generate the `woff` and `woff2` files format from `ttf`.
