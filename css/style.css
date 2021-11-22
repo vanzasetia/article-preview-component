@@ -563,14 +563,14 @@ br + br {
 
 .card {
   border-radius: 0.8em;
-  box-shadow: 0 0.9375rem 1.875rem rgba(158, 175, 194, 0.4);
+  box-shadow: 0 1.25rem 1.25rem rgba(158, 175, 194, 0.2);
   background-color: white;
   max-width: 25rem;
   overflow: hidden;
 }
 @media screen and (min-width: 61.25em) {
   .card {
-    max-width: 43.75rem;
+    max-width: 46.875rem;
     overflow: visible;
   }
 }
@@ -591,7 +591,7 @@ br + br {
 }
 @media screen and (min-width: 61.25em) {
   .card__content {
-    padding: 2.5rem 2rem;
+    padding: 2rem 2.5rem;
   }
 }
 
@@ -708,7 +708,8 @@ br + br {
 @media screen and (min-width: 61.25em) {
   .card__image {
     height: auto;
-    width: 17.5rem;
+    width: 18.75rem;
+    object-position: 0 0;
     border-top-left-radius: 0.8em;
     border-bottom-left-radius: 0.8em;
   }

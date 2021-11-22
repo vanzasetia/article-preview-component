@@ -4,13 +4,13 @@ $card-border-radius: 0.8em;
 
 .card {
   border-radius: $card-border-radius;
-  box-shadow: 0 rem(15) rem(30) rgba($grayish-blue, 0.4);
+  box-shadow: 0 rem(20) rem(20) rgba($grayish-blue, 0.2);
   background-color: $pure-white;
   max-width: rem(400);
   overflow: hidden;
 
   @include breakpoint-up("tiny") {
-    max-width: rem(700);
+    max-width: rem(750);
     overflow: visible;
   }
 }
@@ -29,7 +29,7 @@ $card-border-radius: 0.8em;
   padding: rem(40) rem(32) rem(16);
 
   @include breakpoint-up("tiny") {
-    padding: rem(40) rem(32);
+    padding: rem(32) rem(40);
   }
 }
 
@@ -134,7 +134,8 @@ $card-border-radius: 0.8em;
 
   @include breakpoint-up("tiny") {
     height: auto;
-    width: rem(280);
+    width: rem(300);
+    object-position: 0 0;
     border-top-left-radius: $card-border-radius;
     border-bottom-left-radius: $card-border-radius;
   }
