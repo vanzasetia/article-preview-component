@@ -38,7 +38,7 @@
   - [Introduction](#introduction)
   - [The challenge](#the-challenge)
   - [Links](#links)
-  - [Screenshots](#screenshots)
+  - [Screenshot](#screenshot)
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
@@ -71,13 +71,9 @@ The users should be able to:
 - [🌐 Live Review](https://articlepreviewcomponentvanza.netlify.app/)
 - [👨‍🏫 Frontend Mentor Solution Page]()
 
-### Screenshots
+### Screenshot
 
-Desktop
-![Desktop](./screenshots/desktop.jpg)
-
-Mobile
-![Mobile](./screenshots/mobile.jpg)
+![Desktop](./screenshots/desktop.png)
 
 <!-- ENDOF Overview -->
 
@@ -86,6 +82,7 @@ Mobile
 [(Back to top)](#table-of-contents)
 
 ### Built With
+- Following best practices* :star:
 - HTML Semantic Tags
 - [BEM (Block, Element, Modifier)](https://sparkbox.com/foundry/bem_by_example) - class naming convention
 - [Sass](https://sass-lang.com/)
@@ -93,6 +90,8 @@ Mobile
 - CSS Flexbox
 - Mobile-first workflow
 - [Normalize.css](https://necolas.github.io/normalize.css/)
+
+> \* *I follow guidelines. [See what guidelines that I follow.](./docs/README.md#guidelines)* 
 <!-- ENDOF My Process -->
 
 <!-- Author -->
@@ -116,7 +115,7 @@ The motivation to create a great `README.md` is coming from [awesome-readme repo
 ## License
 [(Back to top)](#table-of-contents)
 
->You can check out [the full license](https://github.com/vanzasetia/article-preview-component/blob/master/LICENSE)
+>You can check out [the full license](./LICENSE)
 
 This project is licensed under the terms of the MIT license.
 
