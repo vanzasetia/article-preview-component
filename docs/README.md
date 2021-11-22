@@ -3,6 +3,7 @@
 
 ## Table of contents
 - [Overview](#overview)
+- [NPM Packages](#npm-packages)
 - [Colors](#colors)
 - [Font family](#font-family)
 - [References](#references)
@@ -13,6 +14,22 @@
 
 ## Overview
 This the place where I document everything about this project. Feel free to take a look.
+
+## NPM Packages
+
+```txt
+├── autoprefixer@10.4.0
+├── browser-sync@2.27.7
+├── csscomb@4.3.0
+├── live-server@1.2.1
+├── markserv@1.17.4
+├── npm-run-all@4.1.5
+├── npm@8.1.3
+├── postcss-cli@9.0.2
+├── prettier@2.4.1
+├── sass@1.43.4
+└── semistandard@16.0.1
+```
 
 ## Colors
 I used all the colors on the [style-guide](../style-guide.md) and with this additional color:
