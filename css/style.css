@@ -440,12 +440,12 @@ html {
 }
 
 ::selection {
-  background-color: #171b21;
+  background-color: #165fcc;
   color: #f2f2f2;
 }
 
 ::-moz-selection {
-  background-color: #171b21;
+  background-color: #165fcc;
   color: #f2f2f2;
 }
 
