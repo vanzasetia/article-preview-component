@@ -1,24 +1,24 @@
 (function () {
-  "use strict";
+  'use strict';
   const cardShareToggleButton = document.querySelector(
-    ".js-cardShareToggleButton"
+    '.js-cardShareToggleButton'
   );
   const shareOptionsElement = document.querySelector(
-    ".js-shareOptionsElement"
+    '.js-shareOptionsElement'
   );
 
   const openShareOptionsElement = () => {
-    shareOptionsElement.removeAttribute("hidden");
-    cardShareToggleButton.classList.add("is-active");
+    shareOptionsElement.removeAttribute('hidden');
+    cardShareToggleButton.classList.add('is-active');
   };
 
   const closeShareOptionsElement = () => {
-    shareOptionsElement.setAttribute("hidden", "");
-    cardShareToggleButton.classList.remove("is-active");
+    shareOptionsElement.setAttribute('hidden', '');
+    cardShareToggleButton.classList.remove('is-active');
   };
 
   const toggleShareOptionsElement = () => {
-    if (shareOptionsElement.hasAttribute("hidden")) {
+    if (shareOptionsElement.hasAttribute('hidden')) {
       openShareOptionsElement();
     } else {
       closeShareOptionsElement();
@@ -26,7 +26,7 @@
   };
 
   cardShareToggleButton.addEventListener(
-    "click",
+    'click',
     toggleShareOptionsElement
   );
 })();

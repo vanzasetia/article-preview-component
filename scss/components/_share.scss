@@ -1,5 +1,4 @@
 @use "../abstracts" as *;
-
 $gap-share-list: rem(16);
 
 /**
@@ -17,39 +16,38 @@ $gap-share-list: rem(16);
   right: 0;
   bottom: 0;
   align-items: center;
-  width: 100%;
-  height: rem(68); /* 1 */
-  padding: rem(16) rem(32); /* 2 */
   background-color: $very-dark-grayish-blue;
-
-  @include breakpoint-up("tiny") {
-    width: auto;
-    height: auto;
-    bottom: rem(110);
+  padding: rem(16) rem(32); /* 2 */
+  width: 100%;
+  height: rem(68); /* 1 */@include breakpoint-up("tiny") {
     right: -#{rem(85)};
+    bottom: rem(110);
     border-radius: 0.7em;
     padding: rem(16) rem(40);
+    width: auto;
+    height: auto;
 
     &::after {
       $share-border: rem(14);
+
       content: "";
       position: absolute;
-      bottom: -#{rem(14)};
       right: rem(120);
-      height: 0;
-      width: 0;
-      border-left: $share-border solid transparent;
-      border-right: $share-border solid transparent;
+      bottom: -#{rem(14)};
       border-top: $share-border solid $very-dark-grayish-blue;
+      border-right: $share-border solid transparent;
+      border-left: $share-border solid transparent;
+      width: 0;
+      height: 0;
     }
   }
 }
 
 .share__text {
+  margin-right: rem(16);
   text-transform: uppercase;
   letter-spacing: 0.4em;
   color: $grayish-blue;
-  margin-right: rem(16);
 }
 
 .share__list {
@@ -65,9 +63,7 @@ $gap-share-list: rem(16);
  * 1. To make the :focus-visible style appear.
  */
 .share__link {
-  display: inline-block; /* 1 */
-
-  @include focus-visible($pure-white);
+  display: inline-block; /* 1 */@include focus-visible($pure-white);
 }
 
 .share__icon {

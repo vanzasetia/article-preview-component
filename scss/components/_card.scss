@@ -7,9 +7,7 @@ $card-border-radius: 0.8em;
   box-shadow: 0 rem(20) rem(20) rgba($grayish-blue, 0.2);
   background-color: $pure-white;
   max-width: rem(400);
-  overflow: hidden;
-
-  @include breakpoint-up("tiny") {
+  overflow: hidden;@include breakpoint-up("tiny") {
     max-width: rem(750);
     overflow: visible;
   }
@@ -18,17 +16,13 @@ $card-border-radius: 0.8em;
 .card__article {
   display: flex;
   position: relative;
-  flex-direction: column-reverse;
-
-  @include breakpoint-up("tiny") {
+  flex-direction: column-reverse;@include breakpoint-up("tiny") {
     flex-direction: row-reverse;
   }
 }
 
 .card__content {
-  padding: rem(40) rem(32) rem(16);
-
-  @include breakpoint-up("tiny") {
+  padding: rem(40) rem(32) rem(16);@include breakpoint-up("tiny") {
     padding: rem(32) rem(40);
   }
 }
@@ -36,15 +30,9 @@ $card-border-radius: 0.8em;
 .card__link {
   text-decoration: none;
   color: $very-dark-grayish-blue;
-  font-size: rem(16);
-
-  @include focus-visible($very-dark-blue);
-
-  @include on-event {
+  font-size: rem(16);@include focus-visible($very-dark-blue);@include on-event {
     text-decoration: underline;
-  }
-
-  @include breakpoint-up("tiny") {
+  }@include breakpoint-up("tiny") {
     font-size: rem(20);
   }
 }
@@ -94,12 +82,9 @@ $card-border-radius: 0.8em;
   border: none;
   border-radius: 50%;
   background-color: $light-grayish-blue;
-  color: $desaturated-dark-blue;
   cursor: pointer;
   padding: 0.7em;
-
-  @include focus-visible($very-dark-blue);
-  @include on-event {
+  color: $desaturated-dark-blue;@include focus-visible($very-dark-blue);@include on-event {
     background-color: $desaturated-dark-blue;
     color: $pure-white;
   }
@@ -107,20 +92,12 @@ $card-border-radius: 0.8em;
 
 .card__button.is-active {
   background-color: $desaturated-dark-blue;
-  color: $pure-white;
-
-  @include focus-visible($pure-white);
-  @include on-event {
+  color: $pure-white;@include focus-visible($pure-white);@include on-event {
     background-color: $light-grayish-blue;
     color: $desaturated-dark-blue;
-  }
-
-  @include breakpoint-up("tiny") {
+  }@include breakpoint-up("tiny") {
     background-color: $desaturated-dark-blue;
-    color: $pure-white;
-
-    @include focus-visible($very-dark-blue);
-    @include on-event {
+    color: $pure-white;@include focus-visible($very-dark-blue);@include on-event {
       background-color: $desaturated-dark-blue;
       color: $pure-white;
     }
@@ -130,13 +107,11 @@ $card-border-radius: 0.8em;
 .card__image {
   object-fit: cover;
   object-position: top;
-  height: rem(220);
-
-  @include breakpoint-up("tiny") {
-    height: auto;
-    width: rem(300);
-    object-position: 0 0;
+  height: rem(220);@include breakpoint-up("tiny") {
     border-top-left-radius: $card-border-radius;
     border-bottom-left-radius: $card-border-radius;
+    object-position: 0 0;
+    width: rem(300);
+    height: auto;
   }
 }
