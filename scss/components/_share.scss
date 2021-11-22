@@ -69,3 +69,8 @@ $gap-share-list: rem(16);
 
   @include focus-visible($pure-white);
 }
+
+.share__icon {
+  width: rem(20);
+  height: rem(20);
+}
