@@ -1,8 +1,6 @@
 # Documentation
 [(Back to home)](https://github.com/vanzasetia/article-preview-component#readme)
 
-![Banner](/images/documentation.gif)
-
 ## Table of contents
 - [Overview](#overview)
 - [Colors](#colors)
