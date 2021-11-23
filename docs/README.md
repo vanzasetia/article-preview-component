@@ -71,3 +71,4 @@ These are the guidelines that I follow when I write the code.
 - [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) - similar to Lighthouse.
 - [Frontend Checklist](https://frontendchecklist.io/) - I checked mostly the *high priority* things.
 - [Typosaurus - Free Website Spell Checker](https://typosaur.us/) - self explanatory.
+- [Meta Tags — Preview, Edit and Generate](https://metatags.io/) - I previewed how my website looks like on social media.
