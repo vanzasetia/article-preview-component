@@ -69,7 +69,7 @@ The users should be able to:
 
 ### Links
 - [🌐 Live Review](https://articlepreviewcomponentvanza.netlify.app/)
-- [👨‍🏫 Frontend Mentor Solution Page]()
+- [👨‍🏫 Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/article-preview-component-html-css-sass-js-xPXxRQyOK)
 
 ### Screenshot
 
